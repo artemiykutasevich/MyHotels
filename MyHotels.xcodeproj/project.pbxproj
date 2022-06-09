@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B869D9FE28523E3800CD1C71 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B869D9FC28523E3800CD1C71 /* Montserrat-Regular.ttf */; };
+		B869D9FF28523E3800CD1C71 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B869D9FD28523E3800CD1C71 /* Montserrat-Bold.ttf */; };
+		B869DA042852414E00CD1C71 /* ProjectFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B869DA032852414E00CD1C71 /* ProjectFonts.swift */; };
 		B886DE84284BD9E600EB5D10 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886DE83284BD9E600EB5D10 /* AuthorizationViewController.swift */; };
-		B886DE8D284BDC7C00EB5D10 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886DE8C284BDC7C00EB5D10 /* Colors.swift */; };
+		B886DE8D284BDC7C00EB5D10 /* ProjectColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886DE8C284BDC7C00EB5D10 /* ProjectColors.swift */; };
 		B886DE90284BE27100EB5D10 /* PasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886DE8F284BE27100EB5D10 /* PasswordService.swift */; };
 		B886DE92284BE29A00EB5D10 /* UsersJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886DE91284BE29A00EB5D10 /* UsersJSON.swift */; };
 		B886DE98284BE3BA00EB5D10 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B886DE97284BE3BA00EB5D10 /* User.swift */; };
@@ -52,8 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B869D9FC28523E3800CD1C71 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B869D9FD28523E3800CD1C71 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		B869DA032852414E00CD1C71 /* ProjectFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFonts.swift; sourceTree = "<group>"; };
 		B886DE83284BD9E600EB5D10 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
-		B886DE8C284BDC7C00EB5D10 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B886DE8C284BDC7C00EB5D10 /* ProjectColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectColors.swift; sourceTree = "<group>"; };
 		B886DE8F284BE27100EB5D10 /* PasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordService.swift; sourceTree = "<group>"; };
 		B886DE91284BE29A00EB5D10 /* UsersJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersJSON.swift; sourceTree = "<group>"; };
 		B886DE97284BE3BA00EB5D10 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -169,7 +175,9 @@
 		B89B8D02284C9C31006D46F1 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				B886DE8C284BDC7C00EB5D10 /* Colors.swift */,
+				B886DE8C284BDC7C00EB5D10 /* ProjectColors.swift */,
+				B869DA032852414E00CD1C71 /* ProjectFonts.swift */,
+				B8FA59B028524B5A00E184A0 /* Fonts */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -237,6 +245,15 @@
 				B8BA703E282C3F9000F5C473 /* HotelsJSON.swift */,
 			);
 			path = HotelService;
+			sourceTree = "<group>";
+		};
+		B8FA59B028524B5A00E184A0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B869D9FC28523E3800CD1C71 /* Montserrat-Regular.ttf */,
+				B869D9FD28523E3800CD1C71 /* Montserrat-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B869D9FF28523E3800CD1C71 /* Montserrat-Bold.ttf in Resources */,
+				B869D9FE28523E3800CD1C71 /* Montserrat-Regular.ttf in Resources */,
 				B8BA7006282C1EBA00F5C473 /* LaunchScreen.storyboard in Resources */,
 				B8BA7003282C1EBA00F5C473 /* Assets.xcassets in Resources */,
 				B8BA7001282C1EB900F5C473 /* Main.storyboard in Resources */,
@@ -371,7 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BA6FFE282C1EB900F5C473 /* HomeViewController.swift in Sources */,
-				B886DE8D284BDC7C00EB5D10 /* Colors.swift in Sources */,
+				B886DE8D284BDC7C00EB5D10 /* ProjectColors.swift in Sources */,
 				B8BA6FFA282C1EB900F5C473 /* AppDelegate.swift in Sources */,
 				B8BA6FFC282C1EB900F5C473 /* SceneDelegate.swift in Sources */,
 				B886DE90284BE27100EB5D10 /* PasswordService.swift in Sources */,
@@ -380,6 +399,7 @@
 				B886DE84284BD9E600EB5D10 /* AuthorizationViewController.swift in Sources */,
 				B8BA703F282C3F9000F5C473 /* HotelsJSON.swift in Sources */,
 				B886DE92284BE29A00EB5D10 /* UsersJSON.swift in Sources */,
+				B869DA042852414E00CD1C71 /* ProjectFonts.swift in Sources */,
 				B886DE9A284BE3CF00EB5D10 /* Hotel.swift in Sources */,
 				B8BA702E282C2AD600F5C473 /* HomeController.swift in Sources */,
 				B8BA7032282C2B5700F5C473 /* SearchController.swift in Sources */,
